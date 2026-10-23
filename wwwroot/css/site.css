@@ -29,3 +29,124 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+.swal2-container .swal2-actions .swal2-confirm {
+  border: 0;
+  border-radius: 4px;
+  background-color: #1976d2 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  font-weight: 500;
+}
+
+.swal2-container .swal2-actions .swal2-confirm:hover {
+  filter: brightness(0.92);
+}
+
+.swal2-container .swal2-actions .swal2-cancel {
+  border: 0;
+  border-radius: 4px;
+  background-color: transparent !important;
+  color: #1976d2 !important;
+  box-shadow: none;
+  font-weight: 500;
+}
+
+.swal2-container .swal2-actions .swal2-cancel:hover {
+  background-color: rgba(25, 118, 210, 0.08) !important;
+}
+
+.swal2-container .swal2-actions .swal2-styled:focus-visible {
+  outline: 3px solid rgba(25, 118, 210, 0.35);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+.app-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease, box-shadow 120ms ease;
+}
+
+.app-button:hover {
+  text-decoration: none;
+}
+
+.app-button:focus-visible {
+  outline: 3px solid rgba(37, 99, 153, 0.28);
+  outline-offset: 2px;
+}
+
+.app-button-primary {
+  background-color: #24476b;
+  border-color: #24476b;
+  color: #fff;
+}
+
+.app-button-primary:hover {
+  background-color: #1b3856;
+  border-color: #1b3856;
+  color: #fff;
+}
+
+.app-button-create {
+  background-color: #287a5b;
+  border-color: #287a5b;
+  color: #fff;
+}
+
+.app-button-create:hover {
+  background-color: #206448;
+  border-color: #206448;
+  color: #fff;
+}
+
+.app-button-secondary {
+  background-color: #fff;
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+.app-button-secondary:hover {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+  color: #1e293b;
+}
+
+.app-button-danger {
+  background-color: #a33b3b;
+  border-color: #a33b3b;
+  color: #fff;
+}
+
+.app-button-danger:hover {
+  background-color: #852f2f;
+  border-color: #852f2f;
+  color: #fff;
+}
+
+.app-button-sm {
+  min-height: 30px;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.8125rem;
+}
+
+.product-actions,
+.product-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
