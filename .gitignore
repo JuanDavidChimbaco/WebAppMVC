@@ -1,0 +1,35 @@
+# Build output
+bin/
+obj/
+artifacts/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# .NET tooling
+*.log
+*.cache
+project.lock.json
+project.fragment.lock.json
+
+# Local SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# Publish output
+publish/

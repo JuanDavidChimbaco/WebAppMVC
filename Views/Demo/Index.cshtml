@@ -1,0 +1,11 @@
+@model IEnumerable<WebAppMVC.Models.Product>
+
+<p>@ViewBag.Message</p>
+
+@foreach(var item in Model)
+{
+    <div>
+        <h4>@item.Name</h4>
+        <p>@item.Description</p>
+    </div>
+}
