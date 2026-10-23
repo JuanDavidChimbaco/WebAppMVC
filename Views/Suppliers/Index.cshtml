@@ -1,0 +1,35 @@
+@model IEnumerable<WebAppMVC.Models.Supplier>
+
+@{
+    ViewData["Title"] = "Suppliers";
+}
+
+<h1>Suppliers</h1>
+
+<p>
+    <a asp-action="Create" class="app-button app-button-create app-button-sm">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="app-button app-button-primary app-button-sm">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id" class="app-button app-button-secondary app-button-sm">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" class="app-button app-button-danger app-button-sm">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
