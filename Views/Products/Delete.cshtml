@@ -45,9 +45,9 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <div class="product-form-actions">
-            <input type="submit" value="Delete" class="app-button app-button-danger" onclick="showSuccessMessage('Product deleted successfully!')" />
-            <a asp-action="Index" class="app-button app-button-secondary">Back to List</a>
+        <div class="crud-action-group">
+            <input type="submit" value="Delete" class="crud-button-danger" onclick="showSuccessMessage('Product deleted successfully!')" />
+            <a asp-action="Index" class="crud-button-secondary">Back to List</a>
         </div>
     </form>
 </div>

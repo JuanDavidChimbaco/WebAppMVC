@@ -62,16 +62,19 @@ body {
   box-shadow: none;
 }
 
-.app-button {
+.crud-button-primary,
+.crud-button-create,
+.crud-button-secondary,
+.crud-button-danger {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 36px;
-  padding: 0.45rem 0.9rem;
+  min-height: 32px;
+  padding: 0.35rem 0.75rem;
   border: 1px solid transparent;
   border-radius: 6px;
   font: inherit;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   line-height: 1.2;
   text-decoration: none;
@@ -80,71 +83,70 @@ body {
   transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease, box-shadow 120ms ease;
 }
 
-.app-button:hover {
+.crud-button-primary:hover,
+.crud-button-create:hover,
+.crud-button-secondary:hover,
+.crud-button-danger:hover {
   text-decoration: none;
 }
 
-.app-button:focus-visible {
+.crud-button-primary:focus-visible,
+.crud-button-create:focus-visible,
+.crud-button-secondary:focus-visible,
+.crud-button-danger:focus-visible {
   outline: 3px solid rgba(37, 99, 153, 0.28);
   outline-offset: 2px;
 }
 
-.app-button-primary {
+.crud-button-primary {
   background-color: #24476b;
   border-color: #24476b;
   color: #fff;
 }
 
-.app-button-primary:hover {
+.crud-button-primary:hover {
   background-color: #1b3856;
   border-color: #1b3856;
   color: #fff;
 }
 
-.app-button-create {
+.crud-button-create {
   background-color: #287a5b;
   border-color: #287a5b;
   color: #fff;
 }
 
-.app-button-create:hover {
+.crud-button-create:hover {
   background-color: #206448;
   border-color: #206448;
   color: #fff;
 }
 
-.app-button-secondary {
+.crud-button-secondary {
   background-color: #fff;
   border-color: #cbd5e1;
   color: #334155;
 }
 
-.app-button-secondary:hover {
+.crud-button-secondary:hover {
   background-color: #f1f5f9;
   border-color: #94a3b8;
   color: #1e293b;
 }
 
-.app-button-danger {
+.crud-button-danger {
   background-color: #a33b3b;
   border-color: #a33b3b;
   color: #fff;
 }
 
-.app-button-danger:hover {
+.crud-button-danger:hover {
   background-color: #852f2f;
   border-color: #852f2f;
   color: #fff;
 }
 
-.app-button-sm {
-  min-height: 30px;
-  padding: 0.3rem 0.65rem;
-  font-size: 0.8125rem;
-}
-
-.product-actions,
-.product-form-actions {
+.crud-action-group {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
